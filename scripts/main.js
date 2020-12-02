@@ -19,7 +19,7 @@ console.log('ScrollTrigger:', ScrollTrigger);
 gsap.registerPlugin(ScrollTrigger)
 const trigger = (el) => {
   return {
-    markers: true,
+    // markers: true,
     trigger: el,
     start: "top 70%",
   }
