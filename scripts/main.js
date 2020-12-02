@@ -17,13 +17,29 @@ navItems.forEach(item => {
 });
 console.log('ScrollTrigger:', ScrollTrigger);
 gsap.registerPlugin(ScrollTrigger)
+const trigger = (el) => {
+  return {
+    markers: true,
+    trigger: el,
+    start: "top 70%",
+  }
+}
 
 const tl = gsap.timeline();
 const tlHero = gsap.timeline({
-  scrollTrigger: { trigger: '#hero' }
+  scrollTrigger: '#hero'
 });
 const tlAbout = gsap.timeline({
-  scrollTrigger: { trigger: '#about' }
+  scrollTrigger: trigger('#about')
+});
+const tlWorks = gsap.timeline({
+  scrollTrigger: trigger('#works')
+});
+const tlContact = gsap.timeline({
+  scrollTrigger: trigger('#contact')
+});
+const tlLink = gsap.timeline({
+  scrollTrigger: trigger('#link')
 });
 
 tl
@@ -71,8 +87,23 @@ tlHero
     duration: .7,
   }, '-=.1')
 
-  tlAbout.from('#about h2', {
-    y: 200,
-    opacity: 0,
-    duration: .7,
-  }, '+=.3')
+tlAbout.from('#about h2', {
+  y: 200,
+  opacity: 0,
+  duration: .7,
+}, '+=0')
+tlWorks.from('#works h2', {
+  y: 200,
+  opacity: 0,
+  duration: .7,
+}, '+=0')
+tlContact.from('#contact h2', {
+  y: 200,
+  opacity: 0,
+  duration: .7,
+}, '+=0')
+tlLink.from('#link h2', {
+  y: 200,
+  opacity: 0,
+  duration: .7,
+}, '+=0')
