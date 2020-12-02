@@ -19,13 +19,10 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-.body {
-  background-color: #e8e8e8;
-  color: #323841;
-}
-
 .container {
   position: relative;
+  background-color: #e8e8e8;
+  color: #323841;
   overflow-x: hidden;
 }
 
@@ -195,6 +192,7 @@ header .navbar .nav-list {
           align-items: center;
   width: 30rem;
   height: 100vh;
+  padding: 100px 0;
   background-color: #e8e8e8;
   -webkit-box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.15);
           box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.15);
@@ -373,6 +371,9 @@ Stylesheet: 768px以上のタブレットやモニタで適用
   }
   section .content h2 {
     font-size: 3.5rem;
+  }
+  header .navbar .nav-list .nav-item .nav-link {
+    font-size: 2rem;
   }
 }
 

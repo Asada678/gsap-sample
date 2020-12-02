@@ -19,12 +19,12 @@ html {
 }
 
 .body {
-  background-color: $white;
-  color: $black;
 }
 
 .container {
   position: relative;
+  background-color: $white;
+  color: $black;
   overflow-x: hidden;
 }
 
@@ -164,6 +164,7 @@ header {
       align-items: center;
       width: 30rem;
       height: 100vh;
+      padding: 100px 0;
       background-color: $white;
       box-shadow: -0.5rem 0 1rem rgba(#000000, 0.15);
       transform: translateX(55rem);
@@ -214,9 +215,7 @@ header {
     z-index: 10;
     top: 0;
     right: 0;
-
     background-color: $white;
-
     width: 100%;
     height: 75vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
