@@ -1,0 +1,23 @@
+/******************************************************************
+
+Stylesheet: 768px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+header .navbar.open .nav-list {
+  width: 50rem;
+}
+
+.hero .hero-textbox h1 {
+  font-size: 6rem;
+}
+.hero .hero-textbox h2 {
+  font-size: 1.6rem;
+}
+.hero .hero-textbox .cta-btn {
+  padding: 1rem 4rem;
+}
+
+section .content h2 {
+  font-size: 3.5rem;
+}

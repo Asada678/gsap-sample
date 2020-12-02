@@ -1,0 +1,21 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+header .navbar .logo a {
+  outline-color: #eee;
+  color: #eee;
+}
+
+.hero {
+  .hero-clipped {
+    width: 60%;
+    height: inherit;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .hero-textbox {
+    width: 80%;
+  }
+}
