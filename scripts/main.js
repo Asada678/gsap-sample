@@ -9,6 +9,11 @@ menu.addEventListener('click', () => {
 
 const tl = gsap.timeline();
 tl
+  .to('.overlay', {
+    y: '100%',
+    duration: 1,
+    stagger: .3
+  })
   .from('.hero-clipped', {
     scaleX: 0,
     x: '100%',
