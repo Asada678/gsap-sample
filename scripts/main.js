@@ -44,7 +44,7 @@ const tlLink = gsap.timeline({
 
 tl
   .to('.overlay', {
-    y: '100%',
+    y: '300%',
     duration: 1,
     stagger: .3
   })
