@@ -94,7 +94,7 @@ tlAbout.from('#about h2', {
 }, '+=0')
 tlWorks.from('#works h2', {
   x: 200,
-  opacity: 0,
+  opacity: 0, 
   duration: .7,
 }, '+=0')
 tlContact.from('#contact h2', {
