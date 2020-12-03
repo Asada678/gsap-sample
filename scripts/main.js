@@ -88,22 +88,22 @@ tlHero
   }, '-=.1')
 
 tlAbout.from('#about h2', {
-  y: 200,
+  x: 200,
   opacity: 0,
   duration: .7,
 }, '+=0')
 tlWorks.from('#works h2', {
-  y: 200,
+  x: 200,
   opacity: 0,
   duration: .7,
 }, '+=0')
 tlContact.from('#contact h2', {
-  y: 200,
+  x: 200,
   opacity: 0,
   duration: .7,
 }, '+=0')
 tlLink.from('#link h2', {
-  y: 200,
+  x: 200,
   opacity: 0,
   duration: .7,
 }, '+=0')
