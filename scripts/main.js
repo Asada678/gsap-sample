@@ -38,8 +38,8 @@ const tlWorks = gsap.timeline({
 const tlContact = gsap.timeline({
   scrollTrigger: trigger('#contact')
 });
-const tlLink = gsap.timeline({
-  scrollTrigger: trigger('#link')
+const tlLinks = gsap.timeline({
+  scrollTrigger: trigger('#links')
 });
 
 tl
@@ -87,23 +87,53 @@ tlHero
     duration: .7,
   }, '-=.1')
 
-tlAbout.from('#about h2', {
-  x: 200,
-  opacity: 0,
-  duration: .7,
-}, '+=0')
+tlAbout
+  .from('#about h2', {
+    x: 200,
+    opacity: 0,
+    duration: .7,
+  })
+  .from('#about .about-img', {
+    x: -200,
+    opacity: 0,
+    duration: .7,
+  }, '-=0.2')
+  .from('#about .about-info', {
+    x: 200,
+    opacity: 0,
+    duration: .7,
+  }, '-=0.2')
 tlWorks.from('#works h2', {
   x: 200,
-  opacity: 0, 
+  opacity: 0,
   duration: .7,
-}, '+=0')
-tlContact.from('#contact h2', {
+}, '-=0')
+.from('#works .work-card', {
+  y: 100,
+  opacity: 0,
+  duration: .7,
+  stagger: .4
+}, '-=0.2')
+tlContact
+  .from('#contact h2', {
   x: 200,
   opacity: 0,
   duration: .7,
-}, '+=0')
-tlLink.from('#link h2', {
-  x: 200,
+}, '-=0')
+  .from('#contact p', {
+  y: 80,
   opacity: 0,
   duration: .7,
-}, '+=0')
+}, '-=0.2')
+tlLinks
+  .from('#links h2', {
+    x: 200,
+    opacity: 0,
+    duration: .7,
+  }, '-=0')
+  .from('#links i', {
+    y: 50,
+    opacity: 0,
+    duration: .7,
+    stagger: .3
+  }, '-=0.2')

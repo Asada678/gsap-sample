@@ -25,3 +25,23 @@ section .content h2 {
 header .navbar .nav-list .nav-item .nav-link {
   font-size: 2rem;
 }
+#about .about-card {
+  flex-direction: row;
+}
+#about .about-card .about-img {
+  flex-basis: 45%;
+  transform: translateX(-3rem);
+
+  img {
+  }
+}
+#about .about-card .about-info {
+  flex-basis: 55%;
+}
+#works .work-cards {
+  flex-direction: row;
+}
+#works .work-cards .work-card {
+  margin: 0 1rem ;
+  // margin-bottom: 0;
+}
