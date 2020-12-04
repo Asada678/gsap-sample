@@ -2,7 +2,7 @@
 
 const navbar = document.querySelector('.navbar');
 const menu = document.querySelector('.menu');
-const navItems = navbar.querySelectorAll('.nav-item');
+const  navItems = navbar.querySelectorAll('.nav-item');
 
 menu.addEventListener('click', () => {
   navbar.classList.toggle('open')
@@ -15,19 +15,24 @@ navItems.forEach(item => {
     }
   });
 });
-console.log('ScrollTrigger:', ScrollTrigger);
+// console.log('ScrollTrigger:', ScrollTrigger);
+
 gsap.registerPlugin(ScrollTrigger)
 const trigger = (el) => {
   return {
     // markers: true,
     trigger: el,
-    start: "top 70%",
+    start: "top 40%",
+    // end
   }
 }
 
 const tl = gsap.timeline();
 const tlHero = gsap.timeline({
-  scrollTrigger: '#hero'
+  scrollTrigger: {
+    trigger: '#hero',
+    start: "top 40%",
+  }
 });
 const tlAbout = gsap.timeline({
   scrollTrigger: trigger('#about')
@@ -44,8 +49,8 @@ const tlLinks = gsap.timeline({
 
 tl
   .to('.overlay', {
-    y: '300%',
-    duration: 1,
+    y: '200%',
+    duration: 1.2,
     stagger: .3
   })
   .from('header', {
@@ -97,12 +102,12 @@ tlAbout
     x: -200,
     opacity: 0,
     duration: .7,
-  }, '-=0.2')
+  }, '-=.2')
   .from('#about .about-info', {
     x: 200,
     opacity: 0,
     duration: .7,
-  }, '-=0.2')
+  }, '-=.2')
 tlWorks.from('#works h2', {
   x: 200,
   opacity: 0,
@@ -112,7 +117,7 @@ tlWorks.from('#works h2', {
   y: 100,
   opacity: 0,
   duration: .7,
-  stagger: .4
+  stagger: 0.4
 }, '-=0.2')
 tlContact
   .from('#contact h2', {
