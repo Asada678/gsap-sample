@@ -362,7 +362,7 @@ section {
         object-fit: cover;
         border-radius: 0.8rem;
 
-        &::before {
+        &::after {
           content: "";
           position: absolute;
           top: 0;
@@ -391,6 +391,7 @@ section {
       margin-bottom: 2rem;
       padding: 2rem 3rem;
       border-radius: .8rem;
+      background-color: $white;
       box-shadow: 0 .5rem 3rem rgba(#000000, 0.15),0 0 5rem rgba(#000000, 0.05);
 
       &:last-child{
